@@ -1,5 +1,6 @@
 FROM node:18-alpine
 WORKDIR /app
+RUN apk upgrade --no-cache && npm install -g npm@latest
 COPY package*.json ./
 RUN npm ci --omit=dev
 COPY server.js .
