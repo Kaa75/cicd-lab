@@ -14,3 +14,5 @@ variable "environment" {
   default     = "lab"
   description = "Environment tag applied to resources."
 }
+
+# Lab submission - Karim Abboud & Layla Monzer
